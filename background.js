@@ -4,9 +4,11 @@
 	
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
-	
+
+	var randNum = Math.floor((Math.random() * 20) + 1);
+
 	// this now works
 	chrome.tabs.executeScript({
-        code: 'document.body.style.backgroundImage="url(\"+chrome.extension.getURL(\"images/cages/1.jpg\")+\")";'
+        code: 'document.body.style.backgroundImage="url(\"+chrome.extension.getURL(\"images/cages/\"randNum\".jpg\")+\")";'
     });
 });
