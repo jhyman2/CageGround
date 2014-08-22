@@ -9,6 +9,6 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 
 	// this now works
 	chrome.tabs.executeScript({
-        code: 'document.body.style.backgroundImage="url(\"+chrome.extension.getURL(\"images/cages/\"randNum\".jpg\")+\")";'
+        code: 'document.body.style.backgroundImage="url(\"+chrome.extension.getURL(\"images/cages/' + randNum + '.jpg\")+\")";'
     });
 });
