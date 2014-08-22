@@ -1,6 +1,6 @@
 {
     "name": "CageGround",
-    "version": "0.1",
+    "version": "0.2",
     "description": "CageGround will change the background of your webpage to Nic Cage upon an icon click.",
     "background": {
         "scripts": ["background.js"],
